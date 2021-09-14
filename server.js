@@ -7,11 +7,6 @@ app.get('/', (req, res) => {
   res.send('ok')
 })
 
-app.get('/params', (req, res) => {
-  console.log(req.query)
-  res.send('ok params')
-})
-
 app.listen(PORT, () => {
   console.log('Started on port' + PORT)
 })
